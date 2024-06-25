@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SA SOCIAL</title>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+        <script src="css/jquery-3.6.0.min.js"></script>
+        <script src="css/bootstrap.bundle.js"></script>
+    </head>
+</head>
+
+<body>
+    <header>
+        <div class="logo-search">
+            <div class="logo">
+                <a href=""><img class="img-fluid" src="images/sa-social-logo.png" alt=""></a>
+            </div>
+            <form action="">
+                <input class="search" type="search" name="" placeholder="Search | SA SOCIAL">
+            </form>
+            <div class="acount-pic acount-hide1">
+                <div class="dropdown show">
+
+                    <a class="img " role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" href=""><img class="img-fluid" src="images/about.jpg" alt=""></a>
+
+                    <div class="dropdown-menu profile-dropdown-item" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">See Your Profile</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <a class="dropdown-item" href="#">Add Post</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu">
+            <div class="home"><a data-toggle="tooltip" data-placement="left" title="Home" href="index.html"><i
+                        class="fa-solid fa-house"></i></a></div>
+            <div class="profile"><a data-toggle="tooltip" data-placement="bottom" title="Acount" href="profile.html"><i
+                        class="fa-solid fa-circle-user"></i></a></div>
+            <div class="add-post"><a data-toggle="tooltip" data-placement="bottom" title="New" href="new.html"><i
+                        class="fa-solid fa-circle-plus"></i></a></div>
+            <div class="setting"><a data-toggle="tooltip" data-placement="right" title="Menu" href="menu.html"><i
+                        class="fa-solid fa-box"></i></a></div>
+        </div>
+        <div class="acount-pic acount-hide2">
+            <div class="dropdown show">
+
+
+                <a class="img " role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" href=""><img data-toggle="tooltip" data-placement="left" title="Acount"
+                        class="img-fluid" src="images/about.jpg" alt=""></a>
+
+                <div class="dropdown-menu profile-dropdown-item" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">See Your Profile</a>
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#">Add Post</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </div>
+            <div data-toggle="tooltip" data-placement="bottom" title="Acount Name" class="name"><a
+                    style="color:#00000094;" href="">Shahbaz Ahmad</a></div>
+        </div>
+    </header>
+
+    <div id="main2">
+        <div id="profile" class="container">
+            <div class="row">
+                <div class="profile-style col">
+                    <div class="cover-pic">
+                        <img class="objectfit" onclick="document.getElementById('fullimgcover').requestFullscreen();"
+                            id="fullimgcover"
+                             src="images/1637831241633.jpg" 
+                             
+                             alt="">
+                    </div>
+                    <div class="profile-and-name">
+                        <div class="prof-na">
+                            <div class="profile-pic">
+                                <img class="objectfit"
+                                    onclick="document.getElementById('fullimgprofile').requestFullscreen();"
+                                    id="fullimgprofile" src="images/about.jpg" alt="">
+                            </div>
+                            <div class="name-bio">
+                                <div class="name">
+                                    <h1>Shahbaz Ahmad</h1>
+                                </div>
+                                <div class="bio">The Knowlwdge is Light</div>
+                            </div>
+                        </div>
+                        <div class="editprofile-menu">
+                            <a class="btn editprofile" href="edit-profile.html">Edit Profile</a>
+                            <a class="btn menu" href="menu.html"><i class="fa-solid fa-box"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="post" class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="top-activity">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="acount-search">
+                                    <div class="img">
+                                        <a href=""><img class="objectfit" src="images/about.jpg" alt=""></a>
+                                    </div>
+                                    <form action="">
+                                        <input class="search" type="search" name="" placeholder="Search | SA SOCIAL">
+                                    </form>
+                                </div>
+                                <div class="activity">
+                                    <a style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong1"><i
+                                            class="fa-solid fa-pen-nib text-danger"></i>Text</a>
+                                    <a style="cursor: pointer;" href="new.html"><i
+                                            class="fa-solid fa-image text-success"></i>Photo</a>
+                                    <a style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalLong2"><i
+                                            class="fa-solid fa-face-smile text-warning"></i>Feeling</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-posts">
+                        <div class="card posts" style="width: 100%;">
+                            <div class="post-top">
+                                <div class="img-and-others">
+                                    <div class="img"><a href=""><img class="objectfit"
+                                                src="images/Facebook 308041830413865(JPG).jpg" alt=""></a></div>
+                                    <div class="name-date-category-feeling">
+                                        <div class="name"><a href="" class="text-body"
+                                                style="font-size: 19px; text-decoration: none;">Shahbaz
+                                                Ahmad</a></div>
+                                        <div class="other-things" style="font-size: 14px;">
+                                            <div class="date text-muted">15-07-2021</div>
+                                            <div class="space-dot">&nbsp;.&nbsp;</div>
+                                            <div class="category text-muted"><a href="" class="text-muted"
+                                                    style="text-decoration: none;">Sports</a></div>
+                                            <div class="space-dot">&nbsp;.&nbsp;</div>
+                                            <div class="feeling"><i class="fa-regular fa-face-smile text-warning"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown show">
+                                    <a class="three-dots" role="button" id="dropdownMenuLink2" data-toggle="dropdown"
+                                        aria-haspopup="tree" aria-expanded="false" href="" style="color: black;"><i
+                                            class="fa-solid fa-ellipsis"></i></a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                        <a class="dropdown-item" href="#">See Acount</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <h6>Studio 5 All Recordable Sound</h6>
+                            </div>
+                            <img onclick="document.getElementById('fullimg').requestFullscreen();" id="fullimg"
+                                class="card-img-top" src="images/Facebook 308041830413865(JPG).jpg"
+                                alt="Card image cap">
+                            <div class="like">
+                                <input type="checkbox" name="" id="like">
+                                <label for="like"><i class="fa-solid fa-heart"></i></label>
+                                <div class="like-count">250 Likes</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text" style="text-align: justify;">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content. Lorem
+                                    ipsum dolor, sit amet consectetur adipisicing elit. Odit officia aliquam vero
+                                    voluptas, veniam optio, ex
+                                    dicta repellendus vitae molestias doloremque.
+                                    <a href="" class="btn btn-light" style="font-weight:bold ;">See More</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-posts">
+                        <div class="card posts" style="width: 100%;">
+                            <div class="post-top">
+                                <div class="img-and-others">
+                                    <div class="img"><a href=""><img class="objectfit"
+                                                src="images/Facebook 308041830413865(JPG).jpg" alt=""></a></div>
+                                    <div class="name-date-category-feeling">
+                                        <div class="name"><a href="" class="text-body"
+                                                style="font-size: 19px; text-decoration: none;">Shahbaz
+                                                Ahmad</a></div>
+                                        <div class="other-things" style="font-size: 14px;">
+                                            <div class="date text-muted">15-07-2021</div>
+                                            <div class="space-dot">&nbsp;.&nbsp;</div>
+                                            <div class="category text-muted"><a href="" class="text-muted"
+                                                    style="text-decoration: none;">Sports</a></div>
+                                            <div class="space-dot">&nbsp;.&nbsp;</div>
+                                            <div class="feeling"><i class="fa-regular fa-face-smile text-warning"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown show">
+                                    <a class="three-dots" role="button" id="dropdownMenuLink2" data-toggle="dropdown"
+                                        aria-haspopup="tree" aria-expanded="false" href="" style="color: black;"><i
+                                            class="fa-solid fa-ellipsis"></i></a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                        <a class="dropdown-item" href="#">See Acount</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <h6>Studio 5 All Recordable Sound</h6>
+                            </div>
+                            <p
+                                style="margin:5px 18px 0 18px;padding:10px 0;text-align:justify;border-top:1px solid #bebebe;border-bottom:1px solid #bebebe;font-style: italic;">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae veritatis facere
+                                quidem inventore voluptate aliquam earum, rem quis, ad vel sint. Voluptates quasi
+                                quibusdam magni consequuntur doloremque, sunt mollitia harum! Porro eveniet doloremque
+                                numquam neque qui aspernatur tempora tempore consectetur mollitia? Omnis itaque ex
+                                excepturi rerum optio, repellendus dicta tenetur.
+                                <a href="" class="btn btn-light" style="font-weight:bold ;">See More</a>
+                            </p>
+                            <div class="like" style="border:none ;">
+                                <input type="checkbox" name="" id="like">
+                                <label for="like"><i class="fa-solid fa-heart"></i></label>
+                                <div class="like-count">250 Likes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-posts">
+                        <div class="card posts" style="width: 100%;">
+                            <div class="post-top">
+                                <div class="img-and-others">
+                                    <div class="img"><a href=""><img class="objectfit"
+                                                src="images/Facebook 308041830413865(JPG).jpg" alt=""></a></div>
+                                    <div class="name-date-category-feeling">
+                                        <div class="name"><a href="" class="text-body"
+                                                style="font-size: 19px; text-decoration: none;">Shahbaz
+                                                Ahmad</a></div>
+                                        <div class="other-things" style="font-size: 14px;">
+                                            <div class="date text-muted">15-07-2021</div>
+                                            <div class="space-dot">&nbsp;.&nbsp;</div>
+                                            <div class="category text-muted"><a href="" class="text-muted"
+                                                    style="text-decoration: none;">Sports</a></div>
+                                            <div class="space-dot">&nbsp;.&nbsp;</div>
+                                            <div class="feeling"><i class="fa-regular fa-face-smile text-warning"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown show">
+                                    <a class="three-dots" role="button" id="dropdownMenuLink2" data-toggle="dropdown"
+                                        aria-haspopup="tree" aria-expanded="false" href="" style="color: black;"><i
+                                            class="fa-solid fa-ellipsis"></i></a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                        <a class="dropdown-item" href="#">See Acount</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <h6>Studio 5 All Recordable Sound</h6>
+                            </div>
+                            <div
+                                style="margin:5px 18px 0 18px;padding:20px 0;border-top:1px solid #bebebe;border-bottom:1px solid #bebebe;display: flex;justify-content: center;align-items: center;font-size: 250px;">
+                                <i class="fa-solid fa-face-smile text-warning"></i>
+                            </div>
+                            <div class="like" style="border:none ;">
+                                <input type="checkbox" name="" id="like">
+                                <label for="like"><i class="fa-solid fa-heart"></i></label>
+                                <div class="like-count">250 Likes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  <Start Modal Box For Text and Feeling>   -->
+
+    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add New Text
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="main3" style="top:0;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-row">
+                                            <div class="col-12 mb-3">
+                                                <label for="validationCustom01">Post Title</label>
+                                                <input type="text" class="form-control" id="validationCustom01"
+                                                    placeholder="write a very short title" required>
+                                                <div class="valid-feedback">
+                                                    Please write a valid title
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="validationCustom04">Category</label>
+                                                <select class="custom-select" id="validationCustom04" required>
+                                                    <option selected disabled value="Category">Category</option>
+                                                    <option>Sports</option>
+                                                    <option>News</option>
+                                                    <option>Entertainment</option>
+                                                    <option>Business</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Category.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="validationCustom05">Feeling</label>
+                                                <select class="custom-select" id="validationCustom05" required>
+                                                    <option selected disabled value="Category">Feeling</option>
+                                                    <option>Happy</option>
+                                                    <option>Sad</option>
+                                                    <option>Good</option>
+                                                    <option>Angry</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Category.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12 mb-3">
+                                                <label for="validationCustom06">Write a Text</label>
+                                                <textarea class="form-control" name="" id="validationCustom06" cols="30"
+                                                    rows="5" placeholder="write a post description"></textarea>
+                                                <div class="valid-feedback">
+                                                    Plase write a valid text.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <button class="button" name="submit" type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Share New Feeling
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="main3" style="top:0;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-row">
+                                            <div class="col-12 mb-3">
+                                                <label for="validationCustom01">Post Title</label>
+                                                <input type="text" class="form-control" id="validationCustom01"
+                                                    placeholder="write a very short title" required>
+                                                <div class="valid-feedback">
+                                                    Please write a valid title
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="validationCustom04">Category</label>
+                                                <select class="custom-select" id="validationCustom04" required>
+                                                    <option selected disabled value="Category">Category</option>
+                                                    <option>Sports</option>
+                                                    <option>News</option>
+                                                    <option>Entertainment</option>
+                                                    <option>Business</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Category.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="validationCustom05">Feeling</label>
+                                                <select class="custom-select" id="validationCustom05" required>
+                                                    <option selected disabled value="Category">Feeling</option>
+                                                    <option>Happy</option>
+                                                    <option>Sad</option>
+                                                    <option>Good</option>
+                                                    <option>Angry</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Category.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-12 mb-3">
+                                                <label for="validationCustom05">Share Feeling</label>
+                                                <select class="custom-select" id="validationCustom05" required>
+                                                    <option selected disabled value="Category">Select Feeling</option>
+                                                    <option>Happy</option>
+                                                    <option>Sad</option>
+                                                    <option>Good</option>
+                                                    <option>Angry</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Category.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <button class="button" name="submit" type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  <Close Modal Box For Text and Feeling/>   -->
+
+    <script src="css/custom.js"></script>
+    <style>
+        /*  <This Style Tag include in All HTML File>  */
+
+        /* .menu .home i .menu .add-post i .menu .setting i */
+        .menu .profile i {
+            border-bottom: 3px solid var(--logo-color);
+            border-top: 3px solid transparent;
+        }
+
+        /*  <This Style Tag include in All HTML File/>  */
+    </style>
+</body>
